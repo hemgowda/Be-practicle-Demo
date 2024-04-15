@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.7 on win32)" generated="2024-04-15T22:45:13.395487" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Tempate" source="C:\Users\hem\Downloads\Sanjay\P\Tests\test_tempate.robot">
+<test id="s1-t1" name="Test 1" line="6">
+<kw name="Open Browser">
+<msg time="2024-04-15T22:45:13.431773" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<arg>url=${url}</arg>
+<arg>browser=${browser}</arg>
+<status status="FAIL" start="2024-04-15T22:45:13.431773" elapsed="0.000000">No keyword with name 'Open Browser' found.</status>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Test Step Executed</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-04-15T22:45:13.432771" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-15T22:45:13.430772" elapsed="0.001999">No keyword with name 'Open Browser' found.</status>
+</test>
+<doc>Dynamic Test
+ Created dynamically</doc>
+<status status="FAIL" start="2024-04-15T22:45:13.396639" elapsed="0.036132"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test Tempate">Test Tempate</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
