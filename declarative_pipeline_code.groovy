@@ -14,32 +14,32 @@ pipeline {
         stage('Three') {
             when {
                 not {
-                        branch "master"
+                    branch 'master'
                 } 
             }
-            steps{
+            steps {
                 echo "Hello !"
             }
         }
         stage('Four') {
             parallel {
                 stage('unit test') {
-                        steps{
-                                echo "Running the unit test ......."
-                        } 
+                    steps {
+                        echo "Running the unit test ......."
+                    } 
                 } 
-                stage('Integration test'){
-                    agent{
-                        docker{
-                            reuseNode false
+                stage('Integration test') {
+                    agent {
+                        docker {
                             image 'ubuntu'
+                            args '-v /var/run/docker.sock:/var/run/docker.sock'  // Optional: Add arguments if needed
                         }
                     }
-                    steps{
+                    steps {
                         echo "Running the Integration test ......."
                     }
+                }
             }
         }
     }
-}
 }
