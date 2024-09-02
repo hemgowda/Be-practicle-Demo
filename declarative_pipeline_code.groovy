@@ -31,8 +31,8 @@ pipeline {
                 stage('Integration test') {
                     agent {
                         docker {
-                            image 'ubuntu'
-                            args '-v /var/run/docker.sock:/var/run/docker.sock'  // Optional: Add arguments if needed
+                            image 'ubuntu'               // Docker image to use
+                            args '-v /var/run/docker.sock:/var/run/docker.sock' // Optional arguments
                         }
                     }
                     steps {
