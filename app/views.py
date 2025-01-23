@@ -9,7 +9,12 @@ import subprocess
 import xml.etree.ElementTree as ET
 from subprocess import Popen, PIPE
 import os
+
 # Create your views here.
+<<<<<<< HEAD
+=======
+# this is to show 
+>>>>>>> 1fc2b881147c986efc5ceeef9047636ce9efe9bd
 
 def home(request):
     return HttpResponse("Hello this is Django projectw3")
