@@ -1,4 +1,0 @@
-Started by user admin
-Running as SYSTEM
-Building on the built-in node in workspace /var/lib/jenkins/workspace/job1
-Finished: SUCCESS
